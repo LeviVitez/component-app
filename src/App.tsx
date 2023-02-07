@@ -4,6 +4,7 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import { Product as ProductInterface } from './Product';
 import Product from './components/Product';
+import ErrorMessage from './components/ErrorMessage';
 
 interface State {
   products: ProductInterface[];
@@ -41,6 +42,8 @@ export default class App extends Component<{}, State> {
         </tbody>
       </table>
       <Footer />
+      <ErrorMessage message='error'/>
+      <ErrorMessage message=''/>
     </div>
   }
 }
